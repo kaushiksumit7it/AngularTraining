@@ -1,0 +1,21 @@
+<h1>Simple example of ngIf </h1>
+
+
+<div class="row">
+  Show <input type="checkbox" [(ngModel)]="showMe" />
+</div>
+
+<h1>ngIf </h1>
+
+<p *ngIf="showMe">
+  ShowMe is checked
+</p>
+<p *ngIf="!showMe">
+  ShowMe is unchecked
+</p>
+
+<h1>ngIf Else</h1>
+
+<p *ngIf="showMe; else elseBlock1">
+  ShowMe is checked
+</p>
